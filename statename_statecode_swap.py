@@ -7,7 +7,6 @@ states = {
         'AK': 'Alaska',
         'AL': 'Alabama',
         'AR': 'Arkansas',
-        'AS': 'American Samoa',
         'AZ': 'Arizona',
         'CA': 'California',
         'CO': 'Colorado',
@@ -31,7 +30,6 @@ states = {
         'MI': 'Michigan',
         'MN': 'Minnesota',
         'MO': 'Missouri',
-        'MP': 'Northern Mariana Islands',
         'MS': 'Mississippi',
         'MT': 'Montana',
         'NA': 'National',
@@ -76,8 +74,5 @@ def best_match(x):
         
 df['state_corrected'] = df['state'].apply(lambda x: best_match(x))
 
-
-
-
-if __name__ == "__main__":
-    main(sys.argv)
+# if __name__ == "__main__":
+#     main(sys.argv)
